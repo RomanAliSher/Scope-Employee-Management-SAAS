@@ -165,7 +165,7 @@ CREATE DATABASE scopedb;
 
 * Full-Stack Developer
 * Lahore, Punjab, Pakistan
-* GitHub: [@yourusername](https://github.com/yourusername)
+* GitHub: [@RomanAliSher](https://github.com/RomanAliSher)
 
 ---
 
