@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./public/logo.png">
+    <title>Scope</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // <--- ADDED THIS LINE!
+        theme: {
+          extend: {
+            colors: {
+              'theme-bg': '#F4F5F7',
+              'theme-white': '#FFFFFF',
+              'theme-blue': '#0052CC',
+              'theme-blue-hover': '#003D99',
+              'theme-red': '#DE350B',
+              'theme-dark': '#172B4D',
+              'theme-border': '#DFE1E6',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  
+  <body class="bg-theme-bg text-theme-dark m-0 font-sans transition-colors duration-200 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
