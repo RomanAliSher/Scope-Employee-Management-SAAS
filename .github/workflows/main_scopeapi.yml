@@ -31,10 +31,10 @@ jobs:
       - name: Build and push container image to registry
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./ScopeBackend
           push: true
           tags: scopebackendregistry.azurecr.io/${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_C4B670A0664B46B393F0B0E9E52AC7FD }}/scopebackend:${{ github.sha }}
-          file: ./Dockerfile
+          file: ./ScopeBackend/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
