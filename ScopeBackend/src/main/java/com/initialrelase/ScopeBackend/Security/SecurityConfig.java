@@ -66,7 +66,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsFilter() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:5173","https://scope-employee-management-saas-nxvg.vercel.app"));
+        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:5173","https://scope-employee-management-saas-i8y9-hrc5tw07i-roman18.vercel.app"));
         corsConfiguration.setAllowedHeaders(Arrays.asList("*"));
         corsConfiguration.setAllowedMethods(Arrays.asList("*"));
         corsConfiguration.setAllowCredentials(true);
