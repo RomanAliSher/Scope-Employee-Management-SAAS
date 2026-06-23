@@ -21,8 +21,7 @@ function Departments() {
       
       const response = await fetch(`${API_BASE_URL}/api/v1/department?workspaceName=${workspaceName}`, {
         headers: { 
-          'Authorization': `Bearer ${token}`,
-          'Content-type': 'application/json' 
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -54,7 +53,6 @@ function Departments() {
       const response = await fetch(`${API_BASE_URL}/api/v1/department`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({ 
@@ -105,7 +103,6 @@ function Departments() {
       const response = await fetch(`${API_BASE_URL}/api/v1/department/${deptId}/roles`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({ roleName }) 
