@@ -43,7 +43,7 @@ public class SecurityConfig {
                             publicPaths.forEach(path ->
                                     requests.requestMatchers(path).permitAll());
                             requests.requestMatchers("/api/v1/admin/**").hasRole("ADMIN");
-                            requests.anyRequest().hasAnyRole("USER", "ADMIN");
+                            requests.anyRequest().hasAnyRole("EMPLOYEE", "ADMIN");
                         }
                 )
                 // Pass the injected variable here, DO NOT use 'new JwtTokenFilterEachRequest()'

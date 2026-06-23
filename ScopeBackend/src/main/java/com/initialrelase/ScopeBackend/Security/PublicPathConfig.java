@@ -12,10 +12,10 @@ public class PublicPathConfig {
 
         return List.of(
                 "/api/v1/auth/**",
-                "/api/v1/auth/department/**",
-                "/api/v1/auth/team/**",
-                "/api/v1/auth/issues/**",
-                "/api/v1/auth/sprints/**"
+                "/api/v1/department/**",
+                "/api/v1/team/**",
+                "/api/v1/issues/**",
+                "/api/v1/sprints/**"
         );
     }
 }
